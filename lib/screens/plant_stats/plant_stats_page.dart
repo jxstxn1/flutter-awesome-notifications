@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_awesome_notifications_tutorial/widgets.dart';
+import 'package:flutter_awesome_notifications_tutorial/screens/components/app_bar_title.dart';
+import 'package:flutter_awesome_notifications_tutorial/screens/components/plant_image.dart';
+
+import 'components/plant_stats.dart';
 
 class PlantStatsPage extends StatelessWidget {
   const PlantStatsPage({Key? key}) : super(key: key);

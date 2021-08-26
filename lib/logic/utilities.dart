@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 
+// Create a unique ID for each notification
 int createUniqueId() {
   return DateTime.now().millisecondsSinceEpoch.remainder(100000);
 }
 
+// Defines a model for the scheduled Notification Weekday and time
 class NotificationWeekAndTime {
   final int dayOfTheWeek;
   final TimeOfDay timeOfDay;
@@ -14,6 +16,7 @@ class NotificationWeekAndTime {
   });
 }
 
+// Allows the user to select a weekday and time for the notification
 Future<NotificationWeekAndTime?> pickSchedule(
   BuildContext context,
 ) async {
@@ -86,5 +89,3 @@ Future<NotificationWeekAndTime?> pickSchedule(
   }
   return null;
 }
-
-
